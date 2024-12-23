@@ -8,11 +8,11 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-flax = "^0.6.0"
-einops = "^0.4.1"
+flax = "^0.10.0"
+einops = "^0.8"
 jaxtyping = "^0.2.7"
 torch = "^1.12.1"
-tokenizers = "^0.13.0"
+tokenizers = "^0.21.0"
 
 
 [tool.poetry.group.dev.dependencies]
