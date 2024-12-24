@@ -9,5 +9,6 @@ dependencies = [
     "flax>=0.10.2",
     "jaxtyping>=0.2.36",
     "numpy>=2.2.1",
+    "tokenizers>=0.21.0",
     "torch>=2.5.1",
 ]
