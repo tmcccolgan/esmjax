@@ -2,13 +2,10 @@ import functools
 from typing import Callable, Optional
 
 import einops
-
 import flax.linen as nn
 import jax
 import jax.numpy as jnp
-
 from flax.linen import partitioning as nn_partitioning
-
 from jaxtyping import Array, Bool, Float, Integer
 
 from . import multihead_attention, partitioning
@@ -179,6 +176,7 @@ def get_esm2_model(cfg, lm_head: bool = False):
     # jax.eval_shape uses "fake" arrays to avoid using up device memory.
     # This way we can just extract `params_axes`, since the actual params loading
     # is in io.py.
-    _, params_axes = jax.eval_shape(esm2.init, key, arr).pop("params_axes")
+    params_axes = jax.eval_shape(esm2.init, key, arr).pop("params_axes")
+    print(params_axes)
 
     return esm2, params_axes
