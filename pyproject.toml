@@ -11,7 +11,7 @@ python = "^3.8"
 flax = "^0.10.0"
 einops = "^0.8"
 jaxtyping = "^0.2.7"
-torch = "^1.12.1"
+torch = "^2.0"
 tokenizers = "^0.21.0"
 
 
