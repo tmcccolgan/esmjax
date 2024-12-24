@@ -15,5 +15,7 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "fair-esm>=2.0.0",
     "jupyter>=1.1.1",
+    "pytest>=8.3.4",
 ]
